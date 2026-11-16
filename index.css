@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    font-family: 'Vazirmatn', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-feature-settings: "tnum" 1;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Subtle Telegram Chat Doodle Pattern Overlay */
+.tg-doodle-bg {
+  background-image: url("data:image/svg+xml,%3Csvg width='160' height='160' viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23000000' stroke-opacity='0.045' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M22 28l14-6-5 14-3-5-6-3z'/%3E%3Ccircle cx='78' cy='26' r='7'/%3E%3Cpath d='M124 22c4-4 10-4 14 0s4 10 0 14l-7 7-7-7c-4-4-4-10 0-14z'/%3E%3Cpath d='M36 82c0-6 5-10 11-10s11 4 11 10c0 5-4 9-11 10l-7 4 2-6c-4-2-6-5-6-8z'/%3E%3Cpath d='M104 72l6 12 13 2-9 9 2 13-12-6-12 6 2-13-9-9 13-2z'/%3E%3Cpath d='M24 134a10 10 0 0 1 18-4M132 126l-10 10m0-10l10 10'/%3E%3Crect x='74' y='124' width='16' height='12' rx='3'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 180px 180px;
+}
+
+.dark .tg-doodle-bg {
+  background-image: url("data:image/svg+xml,%3Csvg width='160' height='160' viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23ffffff' stroke-opacity='0.05' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M22 28l14-6-5 14-3-5-6-3z'/%3E%3Ccircle cx='78' cy='26' r='7'/%3E%3Cpath d='M124 22c4-4 10-4 14 0s4 10 0 14l-7 7-7-7c-4-4-4-10 0-14z'/%3E%3Cpath d='M36 82c0-6 5-10 11-10s11 4 11 10c0 5-4 9-11 10l-7 4 2-6c-4-2-6-5-6-8z'/%3E%3Cpath d='M104 72l6 12 13 2-9 9 2 13-12-6-12 6 2-13-9-9 13-2z'/%3E%3Cpath d='M24 134a10 10 0 0 1 18-4M132 126l-10 10m0-10l10 10'/%3E%3Crect x='74' y='124' width='16' height='12' rx='3'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 180px 180px;
+}
+
+/* Custom sleek scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.35);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.55);
+}
