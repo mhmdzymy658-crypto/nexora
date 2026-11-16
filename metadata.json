@@ -1,0 +1,6 @@
+{
+  "name": "Primox — پیام‌رسان پریموکس",
+  "description": "پیام‌رسان مدرن پریموکس با رابط کاربری گرافیکی فارسی، ثبت‌نام و ورود مرحله‌ای، تغییر حساب کاربری، تنظیمات پیشرفته و پس‌زمینه‌های اختصاصی.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
